@@ -1,5 +1,14 @@
 body {
   height: 100vh;
+  font-family: Helvetica;
+}
+
+h1 {
+  text-align: center;
+  padding: 2em;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,15 +19,22 @@ body {
   height: 50vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .cell {
-  width: calc(50vh /3);
-  height: calc(50vh /3);
+  height: calc(50vh/3);
+  width: calc(50vh/3);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5em;
   border: 1px solid black;
+}
+
+.hover {
+  background-color: lightblue;
+}
+
+.hover-x {
+  background-color: red;
 }
